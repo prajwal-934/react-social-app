@@ -1,31 +1,31 @@
 import './post.css'
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-const Post = () => {
+const Post = ({post , user}) => {
     return (
         <div className="post">
             <div className="postWrapper">
                 <div className="postTop">
                     <div className="postTopLeft">
-                        <img src="/assets/person/1.jpeg" alt="" className="postTopImg" />
-                        <span className="postTopName">Prajwal Patil</span>
-                        <span className="postUploadTime">5 min ago</span>
+                        <img src={user[0].profilePicture} alt="" className="postTopImg" />
+                        <span className="postTopName">{user[0].username}</span>
+                        <span className="postUploadTime">{post.date}</span>
                     </div>
                     <div className="postTopRight">
                         <MoreVertIcon />
                     </div>
                 </div>
                 <div className="postCenter">
-                    <div className="postCaption">This is my first Image</div>
-                    <img src="assets/post/1.jpeg" alt="" className="postImage" />
+                    <div className="postCaption">{post.desc}</div>
+                    <img src={post.photo} alt="" className="postImage" />
                 </div>
                 <div className="postBottom">
                     <div className="postBottomLeft">
                         <img src="assets/heart.png" alt="" className="postReactIcon" />
                         <img src="assets/like.png" alt="" className="postReactIcon" />
-                        <span className="postLikeCount">32 people like it</span>
+                        <span className="postLikeCount">{post.like}</span>
                     </div>
                     <div className="postBottomRight">
-                        <span className="postTotalComments">9 comments</span>
+                        <span className="postTotalComments">{post.comment} comments</span>
                     </div>
                 </div>
             </div>

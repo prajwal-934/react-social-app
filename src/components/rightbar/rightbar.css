@@ -1,4 +1,64 @@
 .rightbar{
     flex: 3.5;
+    margin: 0;
+    padding: 0;
+}
+.rightbarWrapper{
+    padding: 20px 15px;
+}
+.birthdayContainer{
+    display: flex;
+    align-items: center;
+}
+.birthdayImg{
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+}
 
+.rightbarAd{
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 20px;
+    margin: 15px 0px;
+    object-fit: contain;
+}
+
+
+
+.onlineFriendsText{
+    margin-bottom: 10px;
+}
+
+.onlineFriendList{
+    list-style: none;
+}
+
+.onlineFriendContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.onlineFriendImgContainer{
+    position: relative;
+    margin-right: 5px;
+}
+
+.onlineTick{
+    height: 15px;
+    width: 15px;
+    background-color: green;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid white;
+    top: -5px;
+    right: -2px;
+}
+
+.onlineFriendImg{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    object-fit: cover;
 }
