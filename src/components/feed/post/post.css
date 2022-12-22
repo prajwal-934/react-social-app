@@ -1,0 +1,65 @@
+.post{
+    width: 95%;
+    box-shadow: 7px 6px 18px 0px rgba(0,0,0,0.40);
+    border-radius: 10px;
+    margin: 30px;
+}
+.postWrapper{
+    padding: 15px;
+}
+.postTop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postTopLeft{
+    display: flex;
+    align-items: center;
+}
+
+.postTopImg{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+.postTopName{
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.postUploadTime{
+    font-size: 14px;
+}
+
+
+/* POST CENTER STARTS */
+
+.postCenter{
+    margin: 20px 0px;
+}
+
+.postImage{
+    width: 100%;
+    object-fit: contain;
+    margin-top: 15px;
+}
+
+
+.postBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.postBottomLeft{
+    display: flex;
+    align-items: center;
+}
+.postReactIcon{
+    height: 22px;
+    width: 22px;
+    margin-right: 5px;
+}
